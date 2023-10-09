@@ -47,7 +47,14 @@ console.log(findEven(numbers()))
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+const summaryNumbers = function (arrays) {
+  let summaryArray = 0;
+  arrays.forEach((num) => (summaryArray += num))
+  return summaryArray;
 
+}
+
+console.log(summaryNumbers(numbers()))
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */

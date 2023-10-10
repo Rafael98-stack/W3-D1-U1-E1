@@ -35,30 +35,30 @@ console.log(numbers(10));
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
 const arrayNumbers = [1,2,3,4,5,6,7,8,9,10]
-const evenNumbers = []
-const findEven = (arr1) => {
 
-const filteredNumbers = arr1.filter((num) => num % 2 === 0 );
-return filteredNumbers;
+const findEven = (arr1) => arr1.filter((num) => num % 2 === 0 );
 
-} ;
+
+
 console.log(findEven(arrayNumbers))
-console.log(findEven(numbers()))
+console.log(findEven(numbers(10)))
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 const summaryNumbers = function (arrays) {
   let summaryArray = 0;
-  arrays.forEach((num) => (summaryArray += num))
+  arrays.forEach(num => (summaryArray += num))
   return summaryArray;
 
 }
 
-console.log(summaryNumbers(numbers()))
+console.log(summaryNumbers(arrayNumbers))
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+const sumNumberReduce = (arr) =>  arr.reduce((acc,cur) => acc+cur ,0) 
 
+console.log(sumNumberReduce(arrayNumbers))
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */

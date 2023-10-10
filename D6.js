@@ -24,13 +24,13 @@ console.log(twoString("love hate").slice(1,0));
 */
 const numbers = num => {
 const randomArray = []
-for (let i = 0; i < 10; i++){
+for (let i = 0; i < num; i++){
   const randomNumber = Math.floor(Math.random()*101);
   randomArray.push(randomNumber)
 }
 return randomArray
 }
-console.log(numbers());
+console.log(numbers(10));
  /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
